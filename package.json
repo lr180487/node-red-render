@@ -1,0 +1,17 @@
+{
+  "name": "node-red-render",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Node-RED runtime prepared for Docker and Render",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-red --userDir /data --settings ./settings.js --port ${PORT:-1880}",
+    "test": "node test/smoke.js"
+  },
+  "engines": {
+    "node": ">=22.9.0 <23"
+  },
+  "dependencies": {
+    "node-red": "5.0.10"
+  }
+}

@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: node-red-server
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "10000"
+    autoDeploy: true
