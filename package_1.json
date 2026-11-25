@@ -1,0 +1,27 @@
+{
+  "name": "node-red-flotation-industrial",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Node-RED industrial flotation HMI with OPC UA, classic dashboard and optional industrial integrations",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "start": "node-red --userDir ./data --port 1880",
+    "check:flow": "node scripts/check-flow.js",
+    "install:nodes": "npm install"
+  },
+  "dependencies": {
+    "node-red": "5.0.10",
+    "node-red-contrib-opcua": "0.2.355",
+    "node-red-dashboard": "3.6.6",
+    "@flowfuse/node-red-dashboard": "1.37.0",
+    "node-red-contrib-modbus": "5.62.1",
+    "node-red-contrib-s7": "3.1.3",
+    "node-red-contrib-buffer-parser": "3.2.2",
+    "node-red-contrib-postgresql": "0.16.2",
+    "node-red-contrib-cron-plus": "3.2.0",
+    "node-red-contrib-telegrambot": "19.0.5"
+  }
+}
