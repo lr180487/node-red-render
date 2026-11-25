@@ -1,0 +1,88 @@
+# ============================================================
+# Node-RED Industrial / Render
+# ============================================================
+
+# Dependencies
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Runtime user directory and persistent data
+data/
+.data/
+.context/
+.cache/
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Node-RED generated credentials and local runtime state
+flows_cred.json
+*_cred.json
+*.sessions.json
+.node-red/
+.runtime/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+*_secret*
+*_secrets*
+
+# Logs and diagnostics
+logs/
+*.log
+*.out
+*.pid
+npm-debug.log*
+yarn-error.log*
+
+# Coverage and test artifacts
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+
+# Build and temporary output
+dist/
+build/
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.code-workspace
+
+# Git tooling
+.git/
+.gitattributes.local
+
+# ------------------------------------------------------------
+# Files intentionally NOT ignored:
+# - package.json / package-lock.json
+# - Dockerfile / .dockerignore / render.yaml
+# - settings.js
+# - flows/*.json and other exported flow JSON
+# - scripts/ and test source files
+# - .env.example (template only; never put real secrets here)
+# ------------------------------------------------------------
