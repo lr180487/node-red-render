@@ -23,6 +23,10 @@
     "node-red-contrib-postgresql": "0.16.2",
     "node-red-contrib-cron-plus": "3.2.0",
     "node-red-contrib-telegrambot": "19.0.5",
-    "@st-one-io/nodes7": "1.1.2"
+    "@st-one-io/nodes7": "1.1.2",
+    "node-red-contrib-s7-plus": "0.3.0"
+  },
+  "optionalDependencies": {
+    "node-snap7": "1.0.9"
   }
 }
